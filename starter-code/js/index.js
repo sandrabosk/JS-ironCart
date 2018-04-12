@@ -30,6 +30,8 @@ var updatedPricesArray = []
 function getPriceByProduct(){
   for(i = 0; i<allTheProducts.length; i++ ){
     var totalIndividualPrice = Number(productPrices[i].innerHTML) * allQuantities[i].value;
+    // make sure you get 2 decimals only
+    totalIndividualPrice = toTwoDecimals(totalIndividualPrice);
     document.getElementsByClassName('total-individual-price')[i].innerHTML = totalIndividualPrice;
   }
 
