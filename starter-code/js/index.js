@@ -59,7 +59,7 @@ var total = pricesArray.reduce(addTotalProductPrice, 0);
 // make sure your total is always to 2 decimals
 total = toTwoDecimals(total);
 console.log("two decimal: ", total)
-document.getElementById('theTotal').innerHTML = total
+document.getElementById('theTotal').innerHTML = total;
 
 }
 
@@ -76,7 +76,7 @@ function createNameNode(newName){
   // then we create span element
   var nameSpan = document.createElement("span");
   nameSpan.setAttribute("class", "product-name");
-  // we attach to this span whichever value user inputed, that we previously called ""newName
+  // we attach to this span whichever value user inputted, that we previously called ""newName
   // so in order to stay consistent we keep that word
   nameSpan.innerHTML = newName;
   // this is how we append element as a child dom element
